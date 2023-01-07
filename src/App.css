@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.table-head-cells span:hover,
+.table-head-cells span:focus{
+  color:white;
+}
