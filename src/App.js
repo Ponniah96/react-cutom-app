@@ -12,6 +12,7 @@ import Box from '@mui/material/Box';
 import { visuallyHidden } from '@mui/utils';
 import PropTypes from 'prop-types';
 import './App.css';
+import { textAlign } from '@mui/system';
 // const columns = [
 //   { id: 'name', label: 'Application Name', minWidth: 170 },
 //   { id: 'code', label: 'Service Name', minWidth: 100 },
@@ -190,7 +191,9 @@ export default function App() {
  
   return (
     <>
-      <Paper sx={{ width: '100%', overflow: 'hidden',paddingTop:'100px' }}>
+      <h1 style={{textAlign:"center"}}>Welcome to React Custom Table App using Material UI</h1>
+      <h3 style={{textAlign:"center"}}>We are displaying data from 3rd Party API. <a href="https://engineering-task.elancoapps.com/api/raw" target="_blank">Click Here</a></h3>
+      <Paper sx={{ width: '100%', overflow: 'hidden',paddingTop:'60px' }}>
       <TableContainer sx={{ maxHeight: 500 }}>
         <Table stickyHeader aria-label="sticky table">
           {/* <TableHead>
